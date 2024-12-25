@@ -1,0 +1,1039 @@
+/* Homepage*/
+
+/* header*/
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 10%;
+}
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d9d9d9;
+}
+
+#Logo {
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+}
+.nav-icon a {
+  margin-right: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media only screen and(max-width: 414px) {
+  #Logo {
+    width: 30%;
+    margin-left: 0;
+  }
+}
+
+/* navigation menu */
+
+.navbar {
+  padding: 7px;
+  margin-top: 40px;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+.navbar a {
+  list-style: none;
+  text-decoration: none;
+  color: #0f420e;
+  font-weight: 400;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+}
+
+.search {
+  display: none;
+}
+
+#toggler,
+input,
+label,
+i {
+  display: none;
+}
+
+.menu-phone {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    gap: 5rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+
+  .search {
+    display: block;
+    position: relative;
+  }
+
+  .search input {
+    width: 80%;
+    padding: 20px;
+    background-color: #d9d9d9;
+    opacity: 0.4;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .searchicon i {
+    font-size: 20px;
+    color: #0f420e;
+    float: right;
+    position: relative;
+    top: -40px;
+    right: 10px;
+  }
+
+  label {
+    display: block;
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #d9d9d9;
+    position: relative;
+    top: 50px;
+  }
+  #toggler,
+  input,
+  label,
+  i {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  #toggler:checked ~ .menu-phone {
+    display: block;
+  }
+  .menu-phone ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+    margin-top: 10px;
+  }
+
+  .menu-phone ul li {
+    padding: 10px;
+  }
+
+  .menu-phone ul li a {
+    color: #0f420e;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Cormorant Garamond", serif;
+  }
+}
+
+/* the following 45 lines of code was adapted from ChatGPT Accessed 2023-11-22*/
+@media only screen and (max-width: 1200px) {
+  label {
+    top: 50px;
+    left: -10px;
+  }
+  .search input {
+    width: 70%;
+  }
+  .searchicon i {
+    top: -40px;
+    right: 0;
+  }
+}
+
+/* maincontent */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.content-text {
+  background-color: #0f420e;
+  width: 70%;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-left: 10%;
+}
+
+#campaign {
+  width: 30%;
+  height: 80%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content-btn {
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  border: 2px solid white;
+  padding: 12px 25px;
+  text-decoration: none;
+}
+
+.content-btn:hover {
+  background-color: #d6a142;
+  color: white;
+}
+
+.content-text h1 {
+  color: #d6a142;
+  font-size: 80px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+}
+
+.content-text h5 {
+  color: white;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  font-weight: 200;
+}
+
+.main-phone {
+  display: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .main-content {
+    display: none;
+  }
+  .main-phone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+  #mainpic {
+    width: 100%;
+  }
+  .content-phone {
+    background-color: #0f420e;
+    padding: 20px;
+  }
+  .content-phone h1 {
+    color: #d6a142;
+    font-size: 40px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 200;
+  }
+  .content-phone h5 {
+    color: white;
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    font-weight: 200;
+  }
+  .maincontent-btn {
+    display: inline-block;
+    color: white;
+    padding: 8px 10px;
+    text-decoration: none;
+    border: 1px solid white;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    margin-left: 35%;
+  }
+}
+
+/* Content 2 */
+.content2 {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+}
+
+.content2-text {
+  background-color: black;
+  width: 70%;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.content2-btn {
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  border: 2px solid white;
+  padding: 12px 25px;
+  text-decoration: none;
+  margin-top: 24%;
+}
+
+.content2-btn:hover {
+  background-color: #d6a142;
+  color: white;
+}
+
+.content2-text h1 {
+  color: white;
+  font-size: 36px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+}
+
+#goldbox {
+  width: 45%;
+  height: 80%;
+  background-color: #d6a142;
+}
+@media only screen and (max-width: 768px) {
+  .content2-btn {
+    margin-top: 70%;
+  }
+}
+@media only screen and (max-width: 414px) {
+  #goldbox {
+    width: 10%;
+  }
+  .content2-text {
+    width: 90%;
+  }
+}
+
+/* Content 3 */
+.content3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.4rem;
+}
+
+.c3 img {
+  width: 70%;
+  height: auto;
+}
+
+.c3 {
+  text-align: center;
+}
+
+.c3 h2 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+.content3-btn {
+  font-family: "Karla", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  color: #000000;
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .content3 {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    bottom: -70px;
+  }
+
+  .content3-btn {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .content3 {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    bottom: -70px;
+    margin-bottom: 30px;
+  }
+
+  .content3-btn {
+    margin-left: 0;
+  }
+  .c3 img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Content 4 */
+
+.content4 {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+}
+
+.content4-text {
+  background-color: #d6a142;
+  width: 60%;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+.content4-text h1 {
+  font-size: 48px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 200;
+}
+.content4-btn {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+  border: 2px solid white;
+  padding: 12px 25px;
+  text-decoration: none;
+  margin-top: 18%;
+}
+
+.content4-btn:hover {
+  background-color: #d6a142;
+  color: white;
+}
+
+.gift {
+  width: 25%;
+  height: 80%;
+}
+
+#greenbox {
+  background-color: #0f420e;
+  width: 15%;
+  height: 80%;
+}
+
+.content4-phone {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .gift {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .content4 {
+    display: none;
+  }
+  .content4-phone {
+    display: flex;
+    flex-direction: column;
+  }
+  .phone4-text {
+    background-color: #d6a142;
+    padding: 20px;
+    text-align: center;
+  }
+  .giftphone {
+    width: 100%;
+  }
+  .phone4-text h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 200;
+  }
+  .phone4-btn {
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    font-family: "Karla", sans-serif;
+  }
+  #phonebox {
+    background-color: #0f420e;
+    padding: 20px;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #d9d9d9;
+  padding: 20px;
+  width: auto;
+  bottom: 0;
+  position: relative;
+}
+
+#logofooter {
+  display: flex;
+  margin-left: 40%;
+  width: 20%;
+  position: relative;
+  bottom: 20px;
+}
+
+#credit {
+  text-align: center;
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+  left: 0px;
+}
+
+.latest {
+  float: right;
+  position: relative;
+  bottom: 60px;
+  margin-right: 9%;
+}
+
+.latest h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+}
+
+.latest h5 {
+  line-height: 0.1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.mail {
+  display: block;
+  padding: 7px 80px;
+  color: black;
+}
+
+.mail input {
+  width: 400px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.footer-btn {
+  position: relative;
+  bottom: -10px;
+  font-family: "Lato", sans-serif;
+  color: grey;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.socials a {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+}
+.socials {
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+  position: relative;
+  bottom: -40px;
+}
+
+.finfo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.row {
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  margin-right: 20px;
+  flex: 1 1 10%;
+}
+
+h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+li {
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+}
+
+button {
+  display: none;
+}
+
+.subscribe {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .latest {
+    bottom: 30px;
+  }
+  .socials {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    bottom: 0px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .row {
+    flex: 1 1 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  footer {
+    padding-bottom: 100px;
+  }
+  .row li {
+    display: none;
+  }
+  button,
+  .down-arrow i {
+    display: block;
+    color: black;
+  }
+  h4,
+  button .down-arrow i {
+    display: flex;
+  }
+  .socials {
+    align-items: center;
+  }
+
+  .latest {
+    display: none;
+  }
+
+  #logofooter {
+    float: right;
+    right: 0px;
+    width: 40%;
+    position: absolute;
+    top: 10%;
+  }
+  #credit {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .down-arrow {
+    background-color: #d9d9d9;
+    color: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  /* the following 11 lines of code was adapted from ChatGPT Accessed 2023-11-28 */
+  .down-arrow i {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+
+  .row.active .down-arrow i {
+    transform: rotate(180deg);
+  }
+
+  .finfo .row {
+    cursor: pointer;
+  }
+
+  .finfo .row.active .panel {
+    display: block;
+  }
+
+  /* the following 6 lines of code was adapted from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown Accessed 2023-11-28*/
+  .panel {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .panel li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+/* Product Page */
+
+.titlespace {
+  padding: 2rem;
+  border-top: solid #d9d9d9 20px;
+}
+.category-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40pt;
+  text-align: center;
+}
+.italic-description {
+  font-family: "Karla", sans-serif;
+  font-size: 28pt;
+  font-style: italic;
+  text-align: center;
+}
+
+/* some of the code in the following slider is based on the code in the following W3Schools link: https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp */
+.category-slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #d9d9d9;
+  overflow: auto;
+  white-space: nowrap;
+  height: auto;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+@media screen and (min-width: 1000px) {
+  .categoryimg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .categoryimg {
+    max-height: 200px;
+  }
+}
+.category-slider,
+.categories {
+  color: black;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24pt;
+  text-align: center;
+}
+.categories {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+.activetext {
+  color: #0f420e;
+  text-decoration: underline;
+}
+
+.breadcrumbs {
+  display: flex;
+  color: black;
+  padding-bottom: 0%;
+  font-family: "Karla", sans-serif;
+  text-decoration: none;
+  font-size: 16pt;
+  padding-top: 0%;
+  padding-left: 2rem;
+}
+
+.necklacespace {
+  padding: 1rem;
+}
+.necklacearea {
+  padding: 2rem;
+}
+
+.necklacecolumns {
+  display: grid;
+  row-gap: 2rem;
+  grid-template-areas:
+    "img img img img img"
+    "img img img img img";
+}
+
+@media screen and (max-width: 1000px) {
+  .necklacecolumns {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-areas:
+      "img img img img"
+      "img img img img";
+  }
+}
+@media screen and (max-width: 900px) {
+  .necklacecolumns {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-areas:
+      "img img img"
+      "img img img";
+  }
+}
+@media screen and (max-width: 800px) {
+  .necklacecolumns {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-areas:
+      "img img"
+      "img img";
+  }
+}
+@media screen and (max-width: 500px) {
+  .necklacecolumns {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-areas:
+      "img"
+      "img";
+  }
+}
+.necklaceimage,
+.necklacecolumns {
+  text-align: left;
+}
+
+.necklaceimage {
+  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+.necklaceimg {
+  width: 100%;
+}
+.new-text {
+  font-family: "Karla", sans-serif;
+  color: #000000;
+  font-size: 16pt;
+  float: left;
+  background-color: white;
+  position: relative;
+}
+.productname {
+  font-family: "Karla", sans-serif;
+  font-size: 16pt;
+  color: #000000;
+  text-decoration: none;
+}
+.pricetag {
+  font-family: "Karla", sans-serif;
+  font-size: 16pt;
+  color: darkgray;
+  text-decoration: none;
+}
+/* Shopping Bag */
+#square-order {
+  border: solid black;
+  padding: 7rem;
+  padding-bottom: 2rem;
+  width: 20%;
+  float: right;
+  padding-top: 0%;
+  margin-top: 6rem;
+  margin-right: 6rem;
+  position: relative;
+  align-items: center;
+}
+
+#smallordertitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24pt;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#item {
+  font-family: "Karla", sans-serif;
+  font-size: 24pt;
+  display: flex;
+  border-top: solid#d9d9d9;
+  border-bottom: solid#d9d9d9;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+#pricepoint {
+  font-family: "Karla", sans-serif;
+  font-size: 20pt;
+  display: flex;
+}
+.hundred {
+  margin-left: 20%;
+}
+
+.checkout-btn {
+  font-family: "Karla", sans-serif;
+  font-size: 14pt;
+  border: 2px solid black;
+  padding: 10px 10%;
+  bottom: -50px;
+  margin-bottom: 2rem;
+  position: center;
+  background-color: #000000;
+  color: white;
+  margin-left: 2rem;
+}
+
+.checkout-btn:hover {
+  color: black;
+  background-color: #d6a142;
+}
+
+#mainorder {
+  padding-left: 2rem;
+  padding-top: 0%;
+}
+
+.order-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: x-large;
+  font-weight: lighter;
+  border-bottom: solid #d9d9d9;
+  width: 50%;
+  margin-left: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 0, 5rem;
+}
+#orderimg {
+  width: 25%;
+  float: left;
+  padding-right: 2rem;
+}
+#maintext {
+  margin-right: 25%;
+  margin-bottom: 25%;
+}
+#productordertitle {
+  font-family: "Karla", sans-serif;
+  font-size: x-large;
+}
+.mainordertext {
+  font-family: "Karla", sans-serif;
+}
+#orderedit {
+  font-family: "Karla", sans-serif;
+  color: darkgrey;
+  text-decoration: none;
+}
+
+#necklacerow {
+  display: grid;
+  grid-template-areas: "img img img";
+  width: 75%;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #square-order {
+    float: none;
+    width: 50%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  #pricepoint {
+    font-family: "Karla", sans-serif;
+    font-size: 16pt;
+    display: flex;
+    margin-right: 2rem;
+  }
+  #item {
+    font-family: "Karla", sans-serif;
+    font-size: 16pt;
+    display: flex;
+    border-top: solid#d9d9d9;
+    border-bottom: solid#d9d9d9;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .checkout-btn {
+    font-family: "Karla", sans-serif;
+    font-size: medium;
+    border: 2px solid black;
+    bottom: -50px;
+    margin-bottom: 2rem;
+    position: center;
+    margin-left: 0%;
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #orderimg {
+    float: none;
+    width: 100%;
+  }
+  #mainorder {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #necklacerow {
+    display: grid;
+    grid-template-areas: "img img";
+    width: 100%;
+    margin-left: 1rem;
+  }
+}
+
+.likebutton {
+  color: #000000;
+}
+
+.likebutton:hover {
+  animation-name: heartbeat;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes heartbeat {
+  0% {
+    color: #000000;
+  }
+
+  15% {
+    color: pink;
+    transform: scale(1, 2);
+  }
+
+  30% {
+    color: red;
+    transform: scale(1, 0);
+  }
+
+  40% {
+    transform: scale(1, 2);
+    color: pink;
+  }
+
+  50% {
+    transform: scale(1, 0);
+    color: red;
+  }
+
+  70% {
+    transform: scale(1, 2);
+    color: pink;
+  }
+
+  80% {
+    transform: scale(1, 0);
+    color: red;
+  }
+
+  100% {
+    transform: scale(1, 0);
+    color: #000000;
+  }
+}
